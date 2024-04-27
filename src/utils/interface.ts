@@ -50,21 +50,23 @@ export interface Skill {
   _id: string;
 }
 
-export interface Project {
-  liveurl: string;
-  githuburl: string;
-  title: string;
-  sequence: number;
-  image: Image;
-  description: string;
-  techStack: string[];
-  _id: string;
-  enabled: boolean;
+export interface Image {
+  public_id?: string;
+  url: string;
 }
 
-export interface Image {
-  public_id: string;
-  url: string;
+export interface Project {
+  _id: number;
+  title: string;
+  description: string;
+  descr: string;
+  sequence: number;
+  liveurl: string;
+  githuburl: string;
+  image: Image;
+  techStack: string[];
+  enabled: boolean;
+  target: string;
 }
 
 export interface SocialHandle {

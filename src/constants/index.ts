@@ -242,6 +242,7 @@ export const PROJECTS = [
     sequence: 1,
     image: {
       url: "/assets/img/work/Procarhub.png",
+      public_id: "Procarhub",
     },
     description: "Landing page d'un site web axé sur la location de voitures.",
     descr:
@@ -258,6 +259,7 @@ export const PROJECTS = [
     sequence: 2,
     image: {
       url: "/assets/img/work/ProImaginify.png",
+      public_id: "ProImaginify",
     },
     description: "Création d'un SaaS avec des fonctionnalités d'IA...",
     descr:
@@ -274,6 +276,7 @@ export const PROJECTS = [
     sequence: 3,
     image: {
       url: "/assets/img/work/ProAdmin.png",
+      public_id: "ProAdmin",
     },
     description: "Création d'un tableau de bord d'administration...",
     descr:
@@ -290,6 +293,7 @@ export const PROJECTS = [
     sequence: 4,
     image: {
       url: "/assets/img/work/Proevently.png",
+      public_id: "Proevently",
     },
     description: "Application web d'organisation d'événements.",
     descr:
@@ -306,6 +310,7 @@ export const PROJECTS = [
     sequence: 5,
     image: {
       url: "/assets/img/work/Prosnap.png",
+      public_id: "Prosnap",
     },
     description:
       "Création d'un réseau social permettant de voir les actualités postées par les utilisateurs.",
@@ -323,6 +328,7 @@ export const PROJECTS = [
     sequence: 6,
     image: {
       url: "/assets/img/work/Protravel.png",
+      public_id: "Protravel",
     },
     description: "Landing page d'une application mobile.",
     descr:
@@ -339,6 +345,7 @@ export const PROJECTS = [
     sequence: 7,
     image: {
       url: "/assets/img/work/Probrainwave.png",
+      public_id: "Probrainwave",
     },
     description: "Site web modernes des mises en page de boîtes de bento.",
     descr:

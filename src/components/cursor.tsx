@@ -18,7 +18,6 @@ export const Cursor = () => {
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
       requestAnimationFrame(() => {
-        // Update position only on animation frame
         cursorX.set(e.clientX - (variant === "PROJECT" ? 32 : 8)); // Adjust offset based on variant
         cursorY.set(e.clientY - (variant === "PROJECT" ? 32 : 8));
       });
@@ -29,7 +28,7 @@ export const Cursor = () => {
     return () => {
       window.removeEventListener("mousemove", moveCursor);
     };
-  }, [variant]);
+  }, [variant, cursorX, cursorY]); // Ajout de cursorX et cursorY
 
   const variants: Variants = {
     DEFAULT: {

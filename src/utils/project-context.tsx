@@ -45,15 +45,16 @@ const ProjectsProvider = ({ children, data }: { children: React.ReactNode; data:
   useEffect(() => {
     const filtered = applyFilters(projects, appliedFilter);
     setFilteredProjects(filtered);
-  }, [appliedFilter, projects]);
+  }, [appliedFilter, projects]); // Ajout de projects dans le tableau de dépendances
 
   useEffect(() => {
     if (sort) {
-      const sorted = projects.toSorted((a, b) => a.sequence - b.sequence);
+      // Assuming you want to sort projects by their sequence
+      const sorted = [...projects].sort((a, b) => a.sequence - b.sequence);
       setFilteredProjects(sorted);
       setProjects(sorted);
     }
-  }, [sort]);
+  }, [sort, projects]);
 
   const applyFilters = (data: Project[], filterValues: string) => {
     if (filterValues === "all") {
