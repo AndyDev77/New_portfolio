@@ -40,7 +40,7 @@ export const PageLoad = ({ setHideLoader }: PageLoadProps) => {
             Je développe des visuels 3D, des interfaces utilisateurs et des applications web.
           </p>
           <div className="flex justify-between items-end">
-            <span className="text-white/30">Loading...</span>
+            <span className="text-white/30">Chargement...</span>
             <motion.span className="md:text-9xl text-7xl font-semibold md:font-bold">
               {counter}%
             </motion.span>
